@@ -15,6 +15,10 @@ class CreateArticuloMovimientosTable extends Migration
     {
         Schema::create('articulo_movimientos', function (Blueprint $table) {
             $table->increments('id');
+			$table->integer('id_articulo');
+			$table->integer('salida');
+			$table->integer('entrada');
+			$table->text('descripcion');
             $table->timestamps();
         });
     }
