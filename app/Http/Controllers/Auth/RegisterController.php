@@ -69,7 +69,7 @@ class RegisterController extends Controller
         ]);
     }
 	
-	protected function register(Request $request, $user)
+	protected function registered(Request $request, $user)
 	{
     	$user->generateToken();
 
