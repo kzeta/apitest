@@ -24,3 +24,5 @@ Route::get('articulo/{articulo}', 'ApiController@mostrar');
 Route::post('articulo', 'ApiController@crear');
 Route::put('articulo/{articulo}', 'ApiController@actualizar');
 Route::delete('articulo/{articulo}', 'ApiController@eliminar');
+
+Route::post('register', 'Auth\RegisterController@registered');
