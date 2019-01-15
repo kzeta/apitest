@@ -21,7 +21,7 @@ class ApiController extends Controller
     public function crear(Request $request)
     {
         $articulo = Articulo::create($request->all());
-		return response()->json(articulo, 201); 
+		return response()->json($articulo, 201); 
     }
 
     public function actualizar(Request $request, Articulo $articulo)
