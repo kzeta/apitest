@@ -47,3 +47,6 @@ http://apitest.k-maleon.cl/api/articulo/{id_articulo}
 DELETE
 recibe api_token
 entrega 202 ok
+
+## Se puede probar con postman
+https://www.getpostman.com/downloads/
